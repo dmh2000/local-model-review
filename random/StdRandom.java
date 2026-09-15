@@ -359,5 +359,3 @@ public final class StdRandom {
     }
 
 }
-
-2

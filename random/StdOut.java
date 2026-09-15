@@ -119,12 +119,4 @@ public final class StdOut {
         out.flush();
     }
 
-    public static void main(String[] args) {
-
-        StdOut.println("Test");
-        StdOut.println(17);
-        StdOut.println(true);
-        StdOut.printf("%.6f\n", 1.0/7.0);
-    }
-
 }
