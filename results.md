@@ -1,13 +1,60 @@
-## Qwen3B original
+## Always Use A Differnet Model To Review Your Code
 
-### Compile
+## The Task
 
+I was testing a local model, Qwen/Qwen3-4B-GGUF:Q4_K_M, to see if my 32GB minipc could run it under llama.cpp. For a test, I downloaded some known good Java code from [Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne ](https://algs4.cs.princeton.edu/home), in this case the [StdRandom class from the random package](https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/StdRandom.java).  I just needed something that I thought would be a really easy initial coding test to see if the model could even run on my pc. 
+
+
+## The Harness
+
+- hardware
+  - AMD Ryzen AI 9 HX 380 (Beelink Ser 9)
+  - 32GB Ram
+  - Radian 890M 
+- [unsloth/Qwen/Qwen3-4B-GGUF model from Huggingface](https://huggingface.co/unsloth/Qwen3-4B-GGUF)
+  - the 4-bit quantization module
+- [llama.cpp](https://llama.app/docs/introduction) 
+  - inference engine
+  - Vulcan
+- [llama.cpp cli](https://llama.app/docs/cli)
+  - the command line agent 
+
+
+## Qwen3B Original
+
+- start the cli
+  - its like a miniature version of Claude Code
+
+```bash
+llama cli -hf "Qwen/Qwen3-4B-GGUF:Q4_K_M"
+```
+
+- give it a prompts
+
+```text
+/read java/StdRandom.java
+/read java/StdOut.java
+review the files random/StdRandom.java and random/StdOut.java and create a python version of the code in those files. Combine the code from the two java files and create a single file with all the resulting code. if there are any packages or functions that are not defined in these two files, assume they are available in a separate library.
+```
+
+Elapsed time
+
+The llama cli doesn't write files, but it outputs the generated code in triple backticks. Unlike Claude it gives you a running description of what it is doing. 
+
+### Build
+
+The build failed with a syntax error:
+
+```text
   File "/home/dmh2000/projects/qwen/qwen3B/randx.py", line 229
     print(f" {StdRandom.uniformLong(100000000000L)}", end='')
                                                ^
 SyntaxError: invalid decimal literal
+```
 
 ### Run
+
+After fixing that error, the run failed with an argument mismatch:
 
 ```text
 line 224: Traceback (most recent call last):
