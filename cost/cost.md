@@ -1,8 +1,3 @@
-## Qwen3B Original Prompt
-prompt: review the files random/StdRandom.java and random/StdOut.java and create a python version of the code in those files. Combine the code from the two java files and create a single file with all the resulting code. if there are any packages or functions that are not defined in these two files, assume they are available in a separate library. 
-
-## Claude
-
 ### Review
 
 prompt: @qwen3B/randx.py review this python program. write findings, if any, to file @claude/review.md. if no findings, write 'none'
@@ -13,8 +8,6 @@ prompt: now create a fixed version of @qwen3B/randx.py and write the new version
 
 
 ### Cost
-
-I asked Claude if there is a slash command that will show me the cost and/or token usage and it immediately told me '/cost' and /context
 
 /cost
 Settings  Status   Config   Usage   Stats

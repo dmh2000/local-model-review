@@ -10,12 +10,12 @@ I was testing a local model, Qwen/Qwen3-4B-GGUF:Q4_K_M, to see if my 32GB minipc
 - hardware
   - AMD Ryzen AI 9 HX 380 (Beelink Ser 9)
   - 32GB Ram
-  - Radian 890M 
+  - Integrated Radian 890M 
 - [unsloth/Qwen/Qwen3-4B-GGUF model from Huggingface](https://huggingface.co/unsloth/Qwen3-4B-GGUF)
   - the 4-bit quantization module
 - [llama.cpp](https://llama.app/docs/introduction) 
   - inference engine
-  - Vulcan
+  - Vulcan GPU library2
 - [llama.cpp cli](https://llama.app/docs/cli)
   - the command line agent 
 
@@ -29,7 +29,7 @@ I was testing a local model, Qwen/Qwen3-4B-GGUF:Q4_K_M, to see if my 32GB minipc
 llama cli -hf "Qwen/Qwen3-4B-GGUF:Q4_K_M"
 ```
 
-- give it a prompts
+- give it these prompts
 
 ```text
 /read java/StdRandom.java
