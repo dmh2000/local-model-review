@@ -39,14 +39,13 @@ llama cli -hf "Qwen/Qwen3-4B-GGUF:Q4_K_M"
 ```
 . Otherwise nothing was changed by hand. 
 
-```text
-/read java/StdRandom.java
-/read java/StdOut.java
-review the files java/StdRandom.java and java/StdOut.java and create a python version of the code in those files. Combine the code from the two java files and create a single file with all the resulting code. if there are any packages or functions that are not defined in these two files, assume they are available in a separate library.
-```
+
+- /read java/StdRandom.java
+- /read java/StdOut.java
+- review the files java/StdRandom.java and java/StdOut.java and create a python version of the code in those files. Combine the code from the two java files and create a single file with all the resulting code. if there are any packages or functions that are not defined in these two files, assume they are available in a separate library.
 
 
-- Output Stats
+#### Output Stats
   - Elapsed time: 9:46
   - Prompt: 630.1 t/s (prefill)
   - Generation: 19.5 t/s
