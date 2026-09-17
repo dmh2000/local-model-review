@@ -1,6 +1,7 @@
 
 ##Gemimo Antigravity Cost
 
+```
 I asked Antigravity if it had a slash command that would tell me the cost and/or token usage for the current sessions. It thought for quite a while running bash commands until I thought it was in an infinite loop. But it finally stopped and told me about the /context, /usage and /credits  command.  Because I was on the $20 plan, it didn't a cost value. the /context
 gave me what I wanted for token usage
 
@@ -17,3 +18,4 @@ gave me what I wanted for token usage
 □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □     ⛁ Subagents: 653 tokens (0.1%)
 □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □     □ Free space: 935.9k (89.3%)
 
+```

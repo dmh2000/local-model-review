@@ -126,7 +126,7 @@ Bottom line: Gemini's review is more thorough and its findings 3, 5, 6, 7, 8, 9 
 These files have the detailed output of the code reviews:
 
 - Qwen
-  - [Code](qwen/qwen-random.py)
+  - [Code](qwen3B/qwen-random.py)
 - Claude
   - [Review](claude/claude-review.md)
   - [Code](claude/claude-random.py)

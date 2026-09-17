@@ -1,3 +1,5 @@
 alg/
 __pycache__/
 .venv/
+server.py
+index.html

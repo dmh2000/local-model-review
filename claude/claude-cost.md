@@ -1,6 +1,7 @@
 
 # Cost : Claude
 
+```text
 /cost
 Settings  Status   Config   Usage   Stats
 
@@ -29,3 +30,4 @@ Settings  Status   Config   Usage   Stats
      ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   ⛁ Messages: 21.7k tokens (2.2%)
      ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝   ⛶ Free space: 903.9k (90.4%)
                                                ⛝ Autocompact buffer: 33k tokens (3.3%)
+```
