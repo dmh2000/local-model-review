@@ -57,7 +57,7 @@ The llama cli doesn't write files, but it outputs the generated code in triple b
 
 
 Note: Before generation, I removed all comments from the java files because they would have overflown the context limit. 
-- give it these prompts. I also modified the top level package declarations so it would show without vscode error complaints
+I also modified the top level package declarations so it would show without vscode error complaints
 
 #### Running the Output
 
